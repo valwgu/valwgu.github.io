@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuisine - Tanini Island</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cuisine-hero {
+            background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('img/cuisine.avif');
+        }
+        
+        .dish-price {
+            color: #1abc9c;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .restaurant-info {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .restaurant-info i {
+            color: #3498db;
+            margin-right: 10px;
+            margin-top: 5px;
+            min-width: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-island-tropical"></i>
+                Tanini Island
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
+                    <li><a href="attractions.html"><i class="fas fa-binoculars"></i> Attractions</a></li>
+                    <li><a href="cuisine.html" class="active"><i class="fas fa-utensils"></i> Cuisine</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero cuisine-hero">
+        <div class="container">
+            <h1>Island Cuisine</h1>
+            <p>Savor the unique flavors of Tanini Island's traditional and contemporary dishes.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="content-section">
+            <h2 class="section-title">Local Specialties</h2>
+            <p class="text-center mb-3" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                Tanini Island's cuisine is a delightful fusion of fresh local ingredients, traditional recipes, and international influences.
+            </p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <img src="img/plate.jpg" alt="Seafood Platter">
+                    <div class="card-content">
+                        <h3>Ocean's Bounty Platter</h3>
+                        <p>Fresh catch of the day including grilled lobster, coconut shrimp, and seared tuna with tropical salsa.</p>
+                        <p><strong>Price:</strong> <span class="dish-price">$45</span></p>
+                        <a href="contact.html?dish=ocean-bounty" class="btn">Order Recipe</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="img/salad.jpg" alt="Tropical Salad">
+                    <div class="card-content">
+                        <h3>Tropical Garden Salad</h3>
+                        <p>Fresh greens with mango, papaya, coconut flakes, and passionfruit dressing.</p>
+                        <p><strong>Price:</strong> <span class="dish-price">$18</span></p>
+                        <a href="contact.html?dish=tropical-salad" class="btn">Order Recipe</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="img/burger.avif" alt="Island Burger">
+                    <div class="card-content">
+                        <h3>Tanini Island Burger</h3>
+                        <p>Grilled fish burger with pineapple salsa and sweet potato fries.</p>
+                        <p><strong>Price:</strong> <span class="dish-price">$22</span></p>
+                        <a href="contact.html?dish=island-burger" class="btn">Order Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight-section">
+            <div class="contact-container">
+                <div>
+                    <h2 class="section-title">Top Restaurants</h2>
+                    <div class="mt-2">
+                        <div style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #ddd;">
+                            <h3 style="color: #2c3e50; margin-bottom: 0.5rem;">Sea Breeze Restaurant</h3>
+                            <div class="restaurant-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>North Beach, Tanini Island</p>
+                            </div>
+                            <div class="restaurant-info">
+                                <i class="fas fa-phone"></i>
+                                <p>+1 (234) 567-8901</p>
+                            </div>
+                            <p>Upscale dining with ocean views and fresh seafood specialties.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <h3 style="color: #2c3e50; margin-bottom: 0.5rem;">Market Street Cafe</h3>
+                            <div class="restaurant-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Downtown Tanini</p>
+                            </div>
+                            <div class="restaurant-info">
+                                <i class="fas fa-phone"></i>
+                                <p>+1 (234) 567-8902</p>
+                            </div>
+                            <p>Casual cafe serving local favorites and international dishes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="section-title">Cooking Classes</h2>
+                    <p class="mb-2">Join our hands-on cooking classes to learn how to prepare traditional Tanini dishes. Classes are held every Tuesday and Thursday at 10 AM.</p>
+                    <div class="mb-2">
+                        <p><strong>Duration:</strong> 3 hours</p>
+                        <p><strong>Price:</strong> $75 per person</p>
+                        <p><strong>Includes:</strong> All ingredients, recipe booklet, and meal</p>
+                    </div>
+                    <a href="contact.html?interest=cooking-class" class="btn btn-primary">Book a Class</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tanini Island</h3>
+                    <p>Experience paradise on earth with our pristine beaches, vibrant culture, and unforgettable adventures.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+        <div class="footer-section">
+			<h3>Source Acknowledgment</h3>
+			<p>The source pictures used for this Website:
+			<a href='https://unsplash.com'>https://unsplash.com</a>
+			<a href='https://images.alphacoders.com'>https://images.alphacoders.com</a>
+ 			<a href='https://hellolittlehome.com/'>https://hellolittlehome.com</a>	
+			<a href='https://Img.Freepik.Com'>https://Img.Freepik.Com</a>
+
+                </div>
+
+
+
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tanini Island, Pacific Ocean</p>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+                    <p><i class="fas fa-envelope"></i> info@taniniisland.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tanini Island. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

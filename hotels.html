@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels & Resorts - Tanini Island</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hotel-hero {
+            background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('img/hotel_bg.jpeg');
+        }
+        
+        .price-tag {
+            color: #1abc9c;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .rating {
+            color: #f1c40f;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-island-tropical"></i>
+                Tanini Island
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="hotels.html" class="active"><i class="fas fa-hotel"></i> Hotels</a></li>
+                    <li><a href="attractions.html"><i class="fas fa-binoculars"></i> Attractions</a></li>
+                    <li><a href="cuisine.html"><i class="fas fa-utensils"></i> Cuisine</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero hotel-hero">
+        <div class="container">
+            <h1>Hotels & Resorts</h1>
+            <p>Find your perfect accommodation on Tanini Island, from luxury resorts to cozy beachfront bungalows.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="content-section">
+            <h2 class="section-title">Featured Accommodations</h2>
+            <p class="text-center mb-3" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                Tanini Island offers a wide range of accommodations to suit every taste and budget. Whether you're looking for a romantic getaway, family vacation, or solo adventure, we have the perfect place for you.
+            </p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <img src="img/hotel.avif" alt="Coral Paradise Resort">
+                    <div class="card-content">
+                        <h3>Coral Paradise Resort</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span style="color: #7f8c8d; margin-left: 0.5rem;">(5.0)</span>
+                        </div>
+                        <p>Luxury beachfront resort with private balconies, infinity pools, and world-class spa facilities.</p>
+                        <p><strong>Price:</strong> <span class="price-tag">$350+ / night</span></p>
+                        <a href="contact.html?hotel=coral-paradise" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="img/hotel1.avif" alt="Tanini Beach Bungalows">
+                    <div class="card-content">
+                        <h3>Tanini Beach Bungalows</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span style="color: #7f8c8d; margin-left: 0.5rem;">(4.5)</span>
+                        </div>
+                        <p>Traditional overwater bungalows with direct ocean access and stunning sunset views.</p>
+                        <p><strong>Price:</strong> <span class="price-tag">$250+ / night</span></p>
+                        <a href="contact.html?hotel=beach-bungalows" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="img/hotel2.avif" alt="Palm Tree Hotel">
+                    <div class="card-content">
+                        <h3>Palm Tree Hotel</h3>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span style="color: #7f8c8d; margin-left: 0.5rem;">(4.0)</span>
+                        </div>
+                        <p>Family-friendly hotel with spacious rooms, kids' club, and multiple dining options.</p>
+                        <p><strong>Price:</strong> <span class="price-tag">$150+ / night</span></p>
+                        <a href="contact.html?hotel=palm-tree" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight-section">
+            <div class="text-center">
+                <h2 class="section-title">Booking Information</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <p class="mb-2">For the best rates and availability, we recommend booking directly through our website. All bookings include complimentary airport transfers and breakfast. Special packages for honeymooners and families are available.</p>
+                    <p class="mb-2">Need help choosing the right accommodation? <a href="contact.html" style="color: #3498db; font-weight: 600;">Contact our travel advisors</a> for personalized recommendations.</p>
+                    <a href="contact.html" class="btn btn-primary mt-2">Contact for Booking</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tanini Island</h3>
+                    <p>Experience paradise on earth with our pristine beaches, vibrant culture, and unforgettable adventures.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+        <div class="footer-section">
+			<h3>Source Acknowledgment</h3>
+			<p>The source pictures used for this Website:
+			<a href='https://unsplash.com'>https://unsplash.com</a>
+			<a href='https://images.alphacoders.com'>https://images.alphacoders.com</a>
+ 			<a href='https://hellolittlehome.com/'>https://hellolittlehome.com</a>	
+			<a href='https://Img.Freepik.Com'>https://Img.Freepik.Com</a>
+
+                </div>
+
+
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tanini Island, Pacific Ocean</p>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+                    <p><i class="fas fa-envelope"></i> info@taniniisland.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tanini Island. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

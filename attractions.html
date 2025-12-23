@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions - Tanini Island</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .attractions-hero {
+            background-image: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.9)), url('img/dive.avif');
+        }
+        
+        .attraction-icon {
+            color: #3498db;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-island-tropical"></i>
+                Tanini Island
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="hotels.html"><i class="fas fa-hotel"></i> Hotels</a></li>
+                    <li><a href="attractions.html" class="active"><i class="fas fa-binoculars"></i> Attractions</a></li>
+                    <li><a href="cuisine.html"><i class="fas fa-utensils"></i> Cuisine</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero attractions-hero">
+        <div class="container">
+            <h1>Island Attractions</h1>
+            <p>Discover the natural wonders and cultural treasures of Tanini Island.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <!-- Natural Attractions -->
+        <section class="content-section">
+            <h2 class="section-title">Natural Wonders</h2>
+            <p class="text-center mb-3" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+                From pristine beaches to ancient rainforests, Tanini Island offers unforgettable experiences for every type of traveler.
+            </p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <img src="img/att.avif" alt="Coral Reefs">
+                    <div class="card-content">
+                        <h3>Coral Reefs Snorkeling</h3>
+                        <p>Explore vibrant coral reefs teeming with tropical fish and marine life. Guided tours available for all skill levels.</p>
+                        <p><strong>Duration:</strong> 2-4 hours</p>
+                        <a href="contact.html?tour=snorkeling" class="btn">Book Tour</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="img/att1.jpg" alt="Waterfall">
+                    <div class="card-content">
+                        <h3>Rainforest Waterfall Hike</h3>
+                        <p>Trek through lush rainforest to discover hidden waterfalls with natural swimming pools.</p>
+                        <p><strong>Difficulty:</strong> Moderate</p>
+                        <a href="contact.html?tour=waterfall-hike" class="btn">Book Tour</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="img/att2.avif" alt="Sunset Cruise">
+                    <div class="card-content">
+                        <h3>Sunset Sailing Cruise</h3>
+                        <p>Enjoy breathtaking sunset views from the water with complimentary drinks and snacks.</p>
+                        <p><strong>Time:</strong> Evening</p>
+                        <a href="contact.html?tour=sunset-cruise" class="btn">Book Tour</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Cultural Experiences -->
+        <section class="content-section">
+            <h2 class="section-title">Cultural Experiences</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="attraction-icon">
+                            <i class="fas fa-drum"></i>
+                        </div>
+                        <h3>Traditional Dance Show</h3>
+                        <p>Experience the vibrant culture of Tanini Island through traditional music and dance performances held every Friday evening at the Cultural Center.</p>
+                        <p><strong>When:</strong> Fridays at 7 PM</p>
+                        <p><strong>Price:</strong> $25 per person</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div class="attraction-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Cooking Classes</h3>
+                        <p>Learn to prepare authentic Tanini dishes using local ingredients and traditional cooking methods.</p>
+                        <p><strong>Duration:</strong> 3 hours</p>
+                        <p><strong>Price:</strong> $75 per person</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-content">
+                        <div class="attraction-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>Historical Village Tour</h3>
+                        <p>Visit preserved historical villages to learn about the island's rich heritage and traditional way of life.</p>
+                        <p><strong>Duration:</strong> 4 hours</p>
+                        <p><strong>Price:</strong> $45 per person</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tour Packages -->
+        <section class="highlight-section">
+            <div class="text-center">
+                <h2 class="section-title">Tour Packages</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <p class="mb-2">We offer a variety of tour packages that combine multiple attractions for a complete Tanini Island experience. All tours include transportation, guides, and necessary equipment.</p>
+                    <div class="mt-2">
+                        <a href="contact.html?package=adventure" class="btn btn-primary">Adventure Package</a>
+                        <a href="contact.html?package=cultural" class="btn">Cultural Package</a>
+                        <a href="contact.html?package=family" class="btn">Family Package</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tanini Island</h3>
+                    <p>Experience paradise on earth with our pristine beaches, vibrant culture, and unforgettable adventures.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+             <div class="footer-section">
+			<h3>Source Acknowledgment</h3>
+			<p>The source pictures used for this Website:
+			<a href='https://unsplash.com'>https://unsplash.com</a>
+			<a href='https://images.alphacoders.com'>https://images.alphacoders.com</a>
+ 			<a href='https://hellolittlehome.com/'>https://hellolittlehome.com</a>	
+			<a href='https://Img.Freepik.Com'>https://Img.Freepik.Com</a>
+
+                </div>
+
+
+
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Tanini Island, Pacific Ocean</p>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+                    <p><i class="fas fa-envelope"></i> info@taniniisland.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tanini Island. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
